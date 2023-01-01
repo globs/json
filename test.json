@@ -1,4 +1,9 @@
-ara
-ara
-ara
-
+{
+	"nodes": [
+		{ "Connection": "PostGRESQL internal", "type": "db", "implem" : "pg" },
+		{ "Connection": "Minio", "type": "cos" , "implem" : "minio"}
+	],
+	"links": [
+		{ "target": 1, "source": 0 , "Operation" : "export_to_cos"}
+	]
+}
